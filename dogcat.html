@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function greeting(){
+        let name=prompt("Plase input your name:");
+        window.alert('Hello'+name);
+        document.getElementById('demo').innerHTML='Hello'+name;
+    }
+    function changetored(){
+        document.getElementById('demo').style.color = 'red';
+    }
+    function changetodog(){
+        document.getElementById('pic').src = 'https://animal4me.files.wordpress.com/2015/02/e0b984e0b88be0b89ae0b8b5e0b980e0b8a3e0b8b5e0b8a2e0b899-e0b8aee0b8b1e0b8aae0b881e0b8b5e0b989-siberian-husky.jpg';
+    }
+    function changetocat(){
+        document.getElementById('pic').src = 'https://hd.co.th/system/image_attachments/images/000/003/868/original/iStock-514236444.jpg' ;
+    }
+</script>
+</head>
+<body>
+
+<h2>My First JavaScript</h2>
+<img id="pic" src="https://hd.co.th/system/image_attachments/images/000/003/868/original/iStock-514236444.jpg"width="500em"><br>
+<button type="button" onclick="changetodog()">dog</button>
+<button type="button" onclick="changetocat()">cat</button>
+<button type="button" onclick="greeting()">
+Click me to greeting.</button>
+
+<button type="button" onclick="changetored()">
+
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+
+</body>
+</html> 
